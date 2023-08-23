@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.nav{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 3vw;
+}
+
+.logo h2{
+    color: white;
+    padding: 1vw 2vw;
+    font-size: 2vw;
+}
+
+.nav-contents{
+    display: flex;
+    gap: 4vw;
+    
+} 
+
+.nav-contents a{
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 2 vw;
+    
+}
+
+.nav-contents i{
+    color: white;   
+    font-weight: 600;
+    display: none;
+}
+
+/* this is the code for the main section of the landing page */
+.main{
+    width: 100%;
+    height:calc(100% -60px);
+    display: flex;
+    flex-direction: row;
+    
+}
+
+    /* left part of the main */
+.main .left{
+    width: 45%;
+    height: 100%;
+    /* background-color: aqua;   */
+}
+.left h1{
+    font-size: 5vw;
+    margin: 1.5vw 5vw;
+    line-height: 5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+}
+
+.left p{
+    font-size: 2vw;
+    margin: 3vw 5vw;
+    width: 80%;
+}
+
+.left button{
+    margin: 1vw 5vw;
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    background-color: lightcyan;
+    border: none;
+    border-radius: 5px;
+}
+
+/* right part of the main */
+.main .right{
+    width: 55%;
+    height: 100%;
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+    margin-top: 2vw;
+    padding-right: 2vw;
+}
+
+/* for mobile screens */
+@media (max-width: 600px){
+
+    /* responsive code for the navbar */
+    .nav{
+        height: 45px;
+    }
+
+    .logo h2{
+        font-size: 1.7vw;
+        line-height: 45px;
+    }
+    .nav-contents a{
+        font-size: 1.5vw;
+        padding: 0 2vw;
+        line-height: 45px;
+        display: none;
+    }
+    .nav-contents i{
+        display: block;
+        line-height: 45px;
+        color: goldenrod;
+        font-size: x-large;
+        font-weight: bolder;
+    }
+
+    /* responsive code for the main contents */
+    .main{
+        height: calc(100% - 45px);
+        flex-direction: column;
+    }
+    .main .left{
+        width: 100%;
+        height: 10%;
+        background-color: red;
+    }
+
+    .main .right{
+        width: 100%;
+    }
+
+    .right img{
+        padding: 0vw;
+    }
+}
